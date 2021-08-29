@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog made by Upanshu</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li onclick="home()">Home</li>
+                    <li onclick="about()">About</li>
+                    <li onclick="news()">News</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="loadingio-spinner-ripple-yj8pfesz2af center" id="loader"><div class="ldio-25z5puhb5ra">
+<div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+</div></div>
+        </div>
+        <div class="main">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/250px-Python_logo_and_wordmark.svg.png">
+            <h1>Welcome To Python Blog</h1><br>
+                <p>Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.[30]
+
+Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.[31]
+
+Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0.[32] Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a garbage collection system using reference counting. Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible. Python 2 was discontinued with version 2.7.18 in 2020.[33]
+
+Python consistently ranks as one of the most popular programming languages</p>
+        </div>
+	</body>
+</html>
+<script>
+    document.getElementById("overlay").style.display = "none";
+function about(){
+    var h1 = document.querySelector("h1");
+    var p = document.querySelector("p");
+    p.innerHTML = 'Python was conceived in the late 1980s[38] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to ABC programming language, which was inspired by SETL,[39] capable of exception handling and interfacing with the Amoeba operating system.[10] Its implementation began in December 1989.[40] Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his permanent vacation from his responsibilities as Pythons Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the projects chief decision-maker.[41] In January 2019, active Python core developers elected a 5-member "Steering Council" to lead the project.[42] As of 2021, the current members of this council are Barry Warsaw, Brett Cannon, Carol Willing, Thomas Wouters, and Pablo Galindo Salgado.[43]'
+    h1.innerHTML = "About";
+    document.getElementById("overlay").style.display = "block";
+    setTimeout(function(){     document.getElementById("overlay").style.display = "none";
+ }, 1000);
+}
+function home(){
+    var h1 = document.querySelector("h1");
+    var p = document.querySelector("p");
+    h1.innerHTML = "Welcome To Python Blog";
+    p.innerHTML = 'Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.[30]';
+    document.getElementById("overlay").style.display = "block";
+    setTimeout(function(){     document.getElementById("overlay").style.display = "none";
+ }, 1000);
+}
+function news(){
+    var h1 = document.querySelector("h1");
+    var p = document.querySelector("p");
+    h1.innerHTML = "News";
+  p.innerHTML = "Python 3.10.0 is almost ready. This release, 3.10.0rc1, is the penultimate release preview. You can get it here:";
+  document.getElementById("overlay").style.display = "block";
+    setTimeout(function(){     document.getElementById("overlay").style.display = "none";
+ }, 1000);
+}
+</script>
+
